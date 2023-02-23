@@ -16,7 +16,7 @@ def MakeAiTurn(Board, Side):
                if GameOver(AiBoard, Side) == Side:
                    return MakeTurn(Board, x, y, Side)
     # Default to random move
-    MakeAiRandomTurn(Board, Side)
+    return MakeAiRandomTurn(Board, Side)
 
 
 # Generates random coordinates and makes a turn
