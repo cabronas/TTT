@@ -12,7 +12,7 @@ def MakeAiTurn(Board, Side):
             # Check if move is legal
             if CheckIfLegal(AiBoard, x, y):
                AiBoard[x][y] = Side
-               # See if move is winning
+               # See if move is a winning one
                if GameOver(AiBoard, Side) == Side:
                    return MakeTurn(Board, x, y, Side)
     # Default to random move
