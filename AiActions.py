@@ -5,7 +5,6 @@ from random import *
 # Main AI Turn logic
 def MakeAiTurn(Board, Side):
     # Check if Ai can win in 1 move
-    AiBoard = Board
     for x in range(3):
         for y in range(3):
             AiBoard = Board
