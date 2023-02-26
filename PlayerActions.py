@@ -27,7 +27,7 @@ def AskPlayerSide():
 # Input valid x and y coordinates for board move
 def InputPlayerCoordinates():
     print("Enter coordinates ")
-    strx, stry = "0", "0"
+    strx, stry = "1", "1"
     try:
         print("Incorrect input, try again")
         strx, stry = input().split()
