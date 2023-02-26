@@ -16,7 +16,7 @@ def MakeAiTurn(Board, Side):
                # See if move is a winning one
                if GameOver(AiBoard, Side) == Side:
                    return MakeTurn(Board, x, y, Side)
-    #Check if player can win in 1 move
+    # Check if player can win in 1 move
     PlayerSide = 1
     if Side == 1: PlayerSide = 2
     for x in range(3):
