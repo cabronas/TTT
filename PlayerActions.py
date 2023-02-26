@@ -27,7 +27,12 @@ def AskPlayerSide():
 # Input valid x and y coordinates for board move
 def InputPlayerCoordinates():
     print("Enter coordinates ")
-    strx, stry = input().split()
+    strx, stry = "0", "0"
+    try:
+        print("Incorrect input, try again")
+        strx, stry = input().split()
+    except:
+        return InputPlayerCoordinates()
     # Check if input is int and a digit
     if CheckIfValidInt(strx) and CheckIfValidInt(stry):
         x = int(strx) - 1
